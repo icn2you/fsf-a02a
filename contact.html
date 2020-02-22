@@ -54,7 +54,7 @@
       <div class="row">
         <div class="col-sm-12">
           <h1>Contact Me</h1>
-          <div class="row">
+          <div class="d-flex flex-row justify-content-center">
             <div class="col-sm-8">
               <form>
                 <div class="form-group">
@@ -66,8 +66,12 @@
                   <input type="email" class="form-control" id="contact-email" placeholder="jane.smith@example.com">
                 </div>
                 <div class="form-group">
-                  <label for="contact-message">Message</label>
-                  <textarea class="form-control" id="contact-message" rows="10"></textarea>
+                  <label for="contact-msg">Message</label>
+                  <textarea class="form-control" id="contact-msg" rows="10" placeholder="Talk to me!"></textarea>
+                </div>
+                <div class="d-flex form-group justify-content-center" id="form-buttons">
+                  <input class="btn btn-outline-info"type="submit" value="Submit">
+                  <input class="btn btn-outline-secondary" type="reset" value="Reset">
                 </div>
               </form>
             </div>
