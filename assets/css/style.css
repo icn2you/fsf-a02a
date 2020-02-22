@@ -1,0 +1,169 @@
+/******************************************************************************
+FSWD:  Christopher B. Zenner
+Date:  02/22/2020
+File:  style.css
+Ver.:  0.1.0 20200219
+
+This CSS specifies the layout and style for the basic portfolio site of the
+FSWD.
+*******************************************************************************/
+
+/* Debug */
+/* { border: 1px solid red !important; }
+   { border: 1px solid orange !important; }
+   { border: 1px solid yellow !important; }
+   { border: 1px solid green !important; }
+   { border: 1px solid blue !important; }
+   { border: 1px solid purple !important; }
+*/
+
+/******************************************************************************
+ Global Elements
+*******************************************************************************/
+* {
+  /* Make widths static */
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  /* Image options for backgrounds:
+  background-image: url("../img/dot-grid.png");
+  background-image: url("../img/grey_@2X.png"); */
+  /* Use variant of bg to distinguish original site from Bootstrap site. */  
+  background-image: url("../img/grey.png");
+  color: #777;
+  font: 16px/1.5rem 'Open Sans', sans-serif;
+}
+
+/******************************************************************************
+ Bootstrap Overrides
+*******************************************************************************/
+.container {
+  max-width: 960px;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.navbar.fixed-bottom {
+  border-top: 5px #4aaaa5 solid;
+  height: 50px;
+}
+
+/******************************************************************************
+ Header Elements
+*******************************************************************************/
+header .container {
+  padding: 0;
+}
+
+header,
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+header .navbar {
+  border-bottom: 1px #ccc solid;
+  letter-spacing: 0.1875rem;
+}
+
+/******************************************************************************
+ Navigation Elements
+*******************************************************************************/
+.navbar-nav .nav-item {
+  border-right: 1px solid #ccc;
+  margin-top: 1.5rem;
+}
+
+.navbar-nav .nav-item:last-child {
+  border-right: none;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #777;
+  font-size: 0.8rem;
+  line-height: 1em;
+  padding-bottom: 0.1875rem;
+  padding-top: 0.1875rem;
+}
+
+a,
+.nav-link,
+.active .nav-link:active, 
+.active .nav-link:hover {
+  text-decoration: none;
+}
+
+a:active, .nav-link:active,
+a:hover, .nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-link:visited {
+  color: #aaa;
+}
+
+/******************************************************************************
+ Primary Content Elements
+*******************************************************************************/
+main {
+  background: #fff;
+  border: 1px solid #ddd;
+  margin: 1.25rem auto;
+  padding: 0 1.25rem;
+}
+
+h1,
+main a {
+  color: #4aaaa5;
+}
+
+h1 {
+  border-bottom: 3px #ddd solid;
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.625rem 0 0.1875rem 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 2em;
+}
+
+/******************************************************************************
+ Image Elements
+*******************************************************************************/
+.img-thumbnail#portrait {
+  max-width: 110%;
+}
+
+
+/******************************************************************************
+ Footer Elements
+*******************************************************************************/
+footer .navbar {
+  background: #666;
+}
+
+/******************************************************************************
+ Class & ID Elements
+*******************************************************************************/
+#name,
+#copyright {
+  color: #fff;
+}
+
+#name {
+  background: #4aaaa5;
+  font: 2rem 'Share Tech Mono', monospace;
+  line-height: 2em;
+  padding: 0 0.9375rem;
+}
+
+#copyright {
+  font-size: 0.8rem;
+}

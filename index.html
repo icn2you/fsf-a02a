@@ -24,25 +24,27 @@
   <body>
     <!-- Header w/Site Navigation -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">christopher_zenner.dev</span>
-        <!-- ******************** ISSUE: Code needed? ******************** -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- ************************************************************* -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <div class="navbar-brand" id="name">christopher_zenner.dev</div>
+          <!-- ******************** ISSUE: Code needed? ******************** -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- ************************************************************* -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -54,7 +56,7 @@
           <h1>About Me</h1>
           <div class="row">
             <div class="col-sm-3">
-              <img src="assets/img/portrait-cbz.png" alt="Christopher B. Zenner" class="img-thumbnail">
+              <img src="assets/img/portrait-cbz.png" alt="Christopher B. Zenner" class="img-thumbnail" id="portrait">
             </div>
             <div class=col-sm-9>
               <p>An <a href="https://www.enneagraminstitute.com/type-1" target="_blank">Enneagram 1w2</a>, Chris is driven by principle. He eschews coffee for tea, punctuating his days with steamy mugs of Japanese green&mdash;<a href="http://mellowmonk.com/buyGreenTea.htm" target="_blank">a fine fukamushi sencha</a> to be exact. When he doesn't have his nose in a five-star self-improvement book, he finds his bliss behind the keyboard of his <a href="https://www.apple.com/macbook-pro-16" target="_blank">MacBook Pro 16"</a>, writing code in an endeavor to make himself worthy of his machine. Chris thinks LA is way too sunny; he disparages his Google Assistant for its AI (<em>i.e.</em>, artificial ignorance); and he throws an error when his broadband is out.</p>
@@ -66,8 +68,8 @@
 
     <!-- Sticky Footer -->
     <footer>
-      <nav class="navbar fixed-bottom navbar-light bg-light">
-        <div class="container flex-fill justify-content-center">
+      <nav class="navbar fixed-bottom navbar-dark">
+        <div class="container flex-fill justify-content-center" id="copyright">
           &copy; 2020 Christopher B. Zenner. All rights reserved.
         </div>
       </nav>
