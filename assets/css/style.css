@@ -40,7 +40,7 @@ body {
  Bootstrap Overrides
 *******************************************************************************/
 .container {
-  max-width: 960px;
+  /* max-width: 960px; */
 }
 
 .navbar {
@@ -108,6 +108,11 @@ a:hover, .nav-link:hover {
 /******************************************************************************
  Primary Content Elements
 *******************************************************************************/
+main.container {
+  /* sticky footer offset + 20px */
+  margin-bottom: 75px;
+}
+
 main {
   background: #fff;
   border: 1px solid #ddd;
@@ -137,9 +142,26 @@ p {
 /******************************************************************************
  Image Elements
 *******************************************************************************/
-.img-thumbnail#portrait {
-  max-width: 110%;
+.photo-box {
+  position: relative;
 }
+
+.photo-label {
+  background: #4aaaa5;
+  bottom: 10px;
+  color: #fff;
+  display: block;
+  left: 5px;
+  opacity: 75%;
+  padding: 10px 0;
+  position: absolute;
+  text-align: center;
+  width: calc(100% - 10px);
+}
+
+/******************************************************************************
+ Form Elements
+*******************************************************************************/
 
 
 /******************************************************************************
