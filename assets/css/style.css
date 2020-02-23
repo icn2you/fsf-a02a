@@ -73,12 +73,11 @@ header .navbar {
  Navigation Elements
 *******************************************************************************/
 .navbar-nav .nav-item {
-  border-right: 1px solid #ccc;
   margin-top: 1.5rem;
 }
 
-.navbar-nav .nav-item:last-child {
-  border-right: none;
+.navbar-nav .nav-item:not(:last-child) {
+  border-right: 1px solid #ccc;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -89,16 +88,41 @@ header .navbar {
   padding-top: 0.1875rem;
 }
 
+.navbar-collapse.show .nav-item:first-child,
+.navbar-collapse.collapsing .nav-item:first-child {
+  margin-top: 1rem;
+}
+
+.navbar-collapse.show .nav-item,
+.navbar-collapse.collapsing .nav-item {
+  font-size: 0.9rem;
+  border: none;
+  margin: 0 auto 1rem;
+}
+
 a,
 .nav-link,
-.active .nav-link:active, 
-.active .nav-link:hover {
+.active .nav-link:active, .show .nav-link:active,
+.active .nav-link:hover, .show .nav-link:hover {
   text-decoration: none;
 }
 
 a:active, .nav-link:active,
 a:hover, .nav-link:hover {
   text-decoration: underline;
+}
+
+p a:active, .show .nav-item .nav-link:active,
+p a:hover, .show .nav-item .nav-link:hover {
+  color: #4aaaa5;
+  /* Text color change is more aesthetically pleasing here.
+  text-shadow: 0.5px 0.5px 1px #4aaaa5; */
+}
+
+.show .active .nav-link
+.show .active .nav-link:active,
+.show .active .nav-link:hover {
+  color: #444;
 }
 
 .nav-link:visited {
@@ -153,7 +177,7 @@ p {
   display: block;
   left: 5px;
   opacity: 75%;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   position: absolute;
   text-align: center;
   width: calc(100% - 10px);
@@ -172,7 +196,7 @@ p {
 }
 
 .btn {
-  margin: 0 5px;
+  margin: 0 0.3125rem;
 }
 
 /******************************************************************************
